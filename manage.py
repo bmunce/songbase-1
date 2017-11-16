@@ -4,7 +4,7 @@ from songbase import app, db, Artist
 manager = Manager(app)
 
 
-# reset the database and create two artists
+# reset the database and populate with two artists
 @manager.command
 def deploy():
     db.drop_all()
